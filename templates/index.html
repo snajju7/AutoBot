@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBot</title>
+    <link rel="stylesheet" href="/static/styles/design.css">
+</head>
+<body>
+    <h1>AutoBot</h1>
+
+    <form action="#" method="GET">
+        <div class="chat_container">
+            <div class="chat_place">
+                <textarea name="chat_box" id="chat_log" cols="70" rows="20"></textarea>
+                <div class="tex_area" id="user_text_area">
+                    <textarea name="chat_area" id="user_input" cols="60" rows="3"></textarea>
+                    <input type="button" value="Send" id="send_btn" onclick="get_response_from_bot()">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        function get_response_from_bot() {
+            var raw_text = $("#user_input").val();
+
+            document.getElementById('chat_log').innerHTML += "You: " + raw_text + "\n\n";
+            
+            //var user_html = document.getElementById('chat_log').innerHTML += "You: " + raw_text + "\n\n";
+            $("#user_input").val("");
+            $("#chat_place").append(user_html);
+            
+
+            document.getElementById('user_text_area').scrollIntoView({block: "start", behavior: "smooth"});
+            
+
+            $.get("/get", {msg: raw_text}).done(function(data) {
+                var AutoBot_html = document.getElementById('chat_log').innerHTML += "AutoBot: " + data + "\n\n";
+                $("#chat_place").append(AutoBot_html)
+                console.log(AutoBot_html)
+                document.getElementById('user_text_area').scrollIntoView({block: "start", behavior: "smooth"});
+            }); 
+
+        }
+
+        
+    </script>
+</body>
+</html>

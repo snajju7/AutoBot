@@ -1,0 +1,667 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["Hello", "Hi", "hey", "Hi there", "Hello there", "hey there", "what's up?", "hola", "hello", "Hi Bot", "Hello AutoBot", "hi Autobot"],
+      "response": ["Hello, how can I help?", "Hi, how can I help?"],
+      "assignment_group": [""],
+      "url": [""],
+      "context": [""]
+    },
+    {
+      "tag": "Bye",
+      "patterns": ["Bye", "Good bye", "See you", "See you later", "talk to you later", "see you again", "talk to you again", "will talk later", "bye take care"],
+      "response": ["Bye, take care", "See you later", "See you again"],
+      "assignment_group": [""],
+      "url": [""],
+      "context": [""]
+    },
+    {
+      "tag": "wrong_answer",
+      "patterns": ["That's wrong kb", "that's wrong", "this is wrong kb","that's not what i am looking for", "you gave me wrong KB", "this is not what i want", "it's not correct kb", "you gave me wrong KB", "this KB is different", "it's not correct KB", "you are giving wrong answer", "that's wrong KB", "this KB is not correct", "no, its not the right KB", "NO, this not correct answer", "No, you gave me wrong KB", "that's wrong answer", "this is wrong answer", "you are wrong", "this is not correct answer", "this answer is wrong"],
+      "response": ["OH! I am sorry. Please rephrase your query."],
+      "url": [""],
+      "assignment_group": [""],
+      "context": [""]
+    },
+    {
+      "tag": "casual_greetings",
+      "patterns": ["How are you?", "How are you doing?", "how do you do?", "How are you today?", "Are you fine?", "Are you good?", "How you doing?", "How are you Bot?", "How are you?", "are you doing good?", "How are you doing?"],
+      "response": ["I am good. How are you doing?"],
+      "url": [""],
+      "assignment_group": [""],
+      "context": [""]
+    },
+    {
+      "tag": "casual_greetings_2",
+      "patterns": ["I am doing good.", "not bad","i am pretty good", "i am pretty good", "I am very well", "I am okay", "I am all right", "I am fine", "I am just fine", "good", "fine", "I am fine", "I am great", "I am doing great", "I am good"],
+      "response": ["Great, Carry on"],
+      "assignment_group": [""],
+      "url": [""],
+      "context": [""]
+    },
+    {
+      "tag": "thank_you",
+      "patterns": ["Thank you", "Thank you so much", "Thanks a lot", "thank you for help", "thank you for info", "thanks", "thank you very much", "thank you again", "thank you for all your help", "Thank you very much", "thank you", "Thanks", "thanks for info", "thank you so much"],
+      "response": ["You are welcome", "Welcome", "It's pleasure to help you", "My pleasure"],
+      "assignment_group": [""],
+      "url": [""],
+      "context": [""]
+    },
+    {
+      "tag": "Good_morning",
+      "patterns": ["Good morning", "Morning", "very good morning", "good morning", "morning", "happy morning", "good morning"],
+      "response": ["Good morning"],
+      "assignment_group": [""],
+      "url": [""],
+      "context": [""]
+    },
+    {
+      "tag": "Windows",
+      "patterns": ["Windows Hello Registration Process", "How to set up Windows hello", "Help me set up windows hello", "I need to set up windows hello", "Windows hello registration issue", "Windows hello set up guide", "set up windows hello on the machine", "give me windows hello registration process guide", "what is the KB for windows hello set up?", "windows hello registration set up guide", "how to find windows hello registration set up guide", "i can't find windows hello registration set up guide", "help me with windows hello set up guide"],
+      "response": ["KB0107276"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0107276%26sysparm_stack%3D%26sysparm_view%3D"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "context": [""]
+    },
+    {
+      "tag": "Avella_token_ID",
+      "patterns": ["How to create Avella Token User ID", "How to set up Avella user ID token", "Set guide for avella user token ID", "help me set up avella user token ID", "set up avella user token id", "set up Avella token user id", "steps to set up avella token user id", "can you help me set up Avella AD set up", "pull avella AD set up process KB", "Help me get kb for avella AD set up process", "how to find avella AD set up process", "how to set up AD for Avella"],
+      "response": ["KB0086281"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0086281%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "add_users_to_EPS",
+      "patterns": ["How to add users to EPS", "add users to EPS", "adding users to EPS", "add users to EPS","help me add users to EPS", "can you help add users to EPS", "how can I add users to EPS", "adding users to EPS", "i need help with adding users to EPS", "how can i add users to EPS?", "do you know how to add users to EPS?"],
+      "response": ["KB0086279"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0086279%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Avella_vpn_rsa",
+      "patterns": ["How to get avella user into VPN?", "connect to avella VPN with RSA", "set up VPN with RSA for Avella", "Avella VPN set up with RSA", "i need to get avella user VPN set up with RSA", "Help me set up VPN with RSA token in Avella", "set up VPN with RSA token in Avella", "Avella RSA VPN instructions", "Avella user needs to set up RSA with VPN", "Avella RSA token configuration with VPN", "VPN for Avella user and RSA token guide"],
+      "response": ["KB0086277/KB0086278"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0086277%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "voicemail_genesys",
+      "patterns": ["How can I reset voice mail password for genesys?","user wants to change password for voice mail for WWE omni genesys","change voice mail password for WWE OMNI genesys","how to change voice mail password for genesys","how to reset voicemail password for genesys","wwe genesys reset voice mail PIN", "reset voice mail for genesys","how to reset voice mail for genesys?","Can I reset genesys voice email password?", "reset genesys voice mail password", "I want to reset voicemail password for genesys", "Voice mail password reset with genesys", "voice mail password reset for genesys", "genesys voice mail password reset", "steps to reset voicemail password for genesys", "help me reset voice mail password for genesys", "how do i reset password for voice mail in genesys?", "how can i change password for voice mail in genesys", "how do we change password for voice mail in genesys"],
+      "response": ["KB0086273"],
+      "assignment_group": ["RCO_CALL CENTER"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0086273%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Briova_citrix_login",
+      "patterns": ["how to login to alexacare briova citrix", "Login to alexacare briova citrix", "login to briova citrix alexacare", "can you help me login to alexacare briova citrix", "help me login to alexacare in citrix", "how to login to alexacare in citrix", "login to alexacare citrix", "how do i login to citrix alexacare", "i am unable to login to alexacare citrix", "issue login to alexacare citrix", "error login to citrix alexacare", "login process for citrix alexacare", "alexacare citrix login issue BriovaRX", "how can i login to citrix alexacare BriovaRX", "user needs to login to alexacare inside citrix", "login guide for alexacare BriovaRX"],
+      "response": ["KB0086270"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0086270%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "BriovaRX_AD_password",
+      "patterns": ["BriovaRx Infusion AD Password reset", "Alexacare BriovaRx Infusion AD Password reset", "AD password rest for briovaRX", "how to reset AD password for briovaRX", "help me reset AD password for BriovaRX", "i need to reset AD password for BriovaRX", "Can I reset AD password for BriovaRX", "help me reset AD password for BriovaRX"],
+      "response": ["KB0086269"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0086269"],
+      "context": [""]
+    },
+    {
+      "tag": "Headset_configuration",
+      "patterns": ["How to configure the headset", "can you help me set up my headset", "please help me how to configure my headset", "can you help me configure the headset please?","my headset is not working", "my headset stopped working", "help me with Headset configuration", "my headset need to be configured", "i need to configure my headset", "how do i configure headset?", "headset configuration issue", "configure headset", "my headset is not configured", "how to set up headset", "headset setup", "help me with headset set up", "steps to set up the headset"],
+      "response": ["KB0086265"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0086265%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Accuterm_Icon_Creation",
+      "patterns": ["How to create Accuterm Icon", "create Accuterm Icon", "help me create Accuterm Icon", "I need to create Accuterm icon", "Can i create accuterm icon?", "Accuterm Incon creation process", "Accuterm Icon missing", "Accuterm icon needs to be created"],
+      "response": ["KB0086264"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0086264%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "genesys_softphone_register",
+      "patterns": ["Genesys,error connecting to the soft phone","genesy softphone error","softphone failed to connect in genesys", "Genesys-DN couldn't be registered on softphone", "Genesys Workspace-softphone won't open", "WWE - cannot connect to softphone", "genesys-Cannot connect to the softphone.Please restart the softphone and log in again", "Genesys Softphone-Registration error", "Genesys Softphone is not connecting", "genesys cannot connect to the softphone", "please restart your softphone", "genesys softphone couldn't be registered", "genesys restart softphone and try again", "my genesys softphone failed to connect", "i am unable to launch softphone", "wwe genesys softphone couldn't be registered", "genesys softphone couldn't be register", "genesys softphone need to restarted", "restart genesys softphone and re connect again", "failed to connect to softphone, restart the genesys softphone"],
+      "response": ["KB0085670"],
+      "assignment_group": ["RCO_CALL CENTER"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0085670%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "PCOMM_copy_paste",
+      "patterns": ["PCOMM 12 Copy Past function","the copy paste not working in rxclaim", "the copy and paste not working in Rxclaim","Rxclaim-copy paste option not working", "PCOMM-unable to copy and paste in Rxclaim", "PCOMM_rxclaim copy paste is not working", "PCOMM-can't copy and paste in rxclaim", "PCOMM-unable to copy and paste", "PCOMM-how to copy and paste in rxlaim", "PCOMM-copy and paste options", "copy and paste options are working in rxclaim", "copy and paste not working in rxclaim", "copy and paste in Rxclaim", "i am unable to use copy and paste options in rxclaim", "IBM PCOMM-rxclaim copy paste option is not working", "IBM PCOMM copy and paste issue", "unable to use copy and paste option in PCOMM", "i can't use copy and paste options in PCOMM RCxclaim", "IBM Rxclaim copy and paste problem", "unable to use copy and paste options in PCOMM rxclaim"],
+      "response": ["KB0085406"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0085406%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Genesys_not_ready_state",
+      "patterns": ["Genesys-immediately goes to not ready state", "genesys goes to not ready state automatically", "wwe genesys goes to not ready state", "Genesys goes to not ready automatically","genesys placed into not ready after click on ready", "Genesys-Transfer, Conference, Log off, or Aux Change issues", "Genesys Aux issues", "Genesys auto log off", "genesys not ready state", "genesys WWE goes to not ready state", "genesys-call transfer issues", "genesys-call conference issues", "genesys state is not ready", "genesys WEE aux change issues", "genesys log off automatically", "genesys call transfer", "unable to transfer genesys calls", "transfer calls in genesys failed", "issue with call transfer in genesys", "issue with aux change in genesys", "not ready state in genesys"],
+      "response": ["KB0097320/KBB0034627"],
+      "assignment_group": ["RCO_CALL CENTER"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0097320%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Genesys_login_errors",
+      "patterns": ["Genesys login errors","genesys is not loading", "genesys not loading", "issue with genesys login", "genesys doesn't load", "i have an issue with genesys login","unable to login to genesys", "i am not able to login to genesys","cannot login to genesys", "genesys unable to login", "could not login to genesys", "genesys login issues", "genesys login problems", "genesys login error", "genesys couldn't login", "issue with genesys login", "my genesys can't login", "i cannot login to genesys","genesys error while login", "genesys login issues", "genesys doesn't login", "genesys having trouble login", "genesys never login"],
+      "response": ["KB0104666/KB0085065"],
+      "assignment_group": ["RCO_CALL CENTER"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0104666%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Windows_white_screen",
+      "patterns": ["Windows10 white screen, locked due to inactivity", "Windows10 White screen at login with inactivity message", "Windows10 white screen on the new computer, locked due to inactivity", "White Screen at Windows login: This Computer has been locked", "Windows10-White screen: Computer is locked due to inactivity", "Windows10-White screen-inactive status", "Windows10-White Screen at Windows login: This Computer has been locked due to inactivity", "Windows10-Locked white screen due to leave", "White screen at boot with inactivity message", "Windows10-White Screen at Windows Login: This Computer has Been Locked", "white screen that says computer is locked due to leave", "Windows10-White Screen This device has been locked due to being on leave", "Windows10-Windows, white screen error computer is locked", "locked on white screen", "Windows10-System locked due to inactivity getting white screen", "Windows10-locked at white screen", "Windows10-White screen-unable to login to screen", "unable to login windows 10, white screen appears due to inactivity", "can't login to windows 10, white screen due to locked", "computer locked due to inactivity", "user can't login to windows due to white screen appears", "user can't login to windows after long leave due to inactivity", "user can't access computer, locked due to inactivity", "computer is being locked due to inactivity"],
+      "response": ["KBB0017313"],
+      "assignment_group": ["SWAT - SECURITY WORKSTATION ACCESS TEAM"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKBB0017313%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "office_365",
+      "patterns": ["turn on Out of office message in office 365", "outlook need to set up out of office messages", "outlook issue, set out of office messages", "how to update retention policy for outlook", "set retention policy in outlook","how to change retention policy for emails","unable to turn on out off office messages in office 365","Office 365-Any issues caused by the UPN for Office 365", "Office 365-UPN needs to be updated", "Outlook 365-UPN value not working to login to Office 365", "Office 365, email account about to be deleted", "Outlook 365, Any Out Of Office Assistant issue", "Office 365 - email account about to be deactivated", "Outlook 365 - Any Out Of Office Assistant issue", "Outlook 365 - Out Of Office Assistant issue", "Office 365 - Unable to receive external emails","office 365 email needs to be reactivated", "Outlook - Create out of the office message", "office 365 mailbox disabled", "Enable office 365 mailbox", "Outlook 365 - Any Out Of Office Assistant issue / Outlook OUT Of OFFICE", "Office 365 - Unable to receive external emails",  "Outlook 365 - Any Out Of Office Assistant issue", "Outlook 365 - Issue sending email outside the office"],
+      "response": ["KBB0011619"],
+      "assignment_group": ["GROUPWARE OPS (UHT) - OSW"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKBB0011619%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "office_365_issues",
+      "patterns": ["Office 365 - Unable to authenticate", "kicked out of office 365","office 365 kicked out", "getting kicked out of office 365","Office 365, trouble login to outlook", "Office 365 - Any Account Issue", "Office 365-unable to access", "Office 365 -unable to open outlook and ms team error incorrect upn", "Office 365 - Error: Something went wrong", "Office 365 - Unable to open my teams, email in outlook", "Office 365 - Unable to login / access email", "office 365 - something went wrong", "Office 365  - needs to setup office 365", "Unable to access office 365", "unable to access outlook", "office 365 can't be accessed", "office 365 doesn't login", "office 365 login issues", "office 365 updates", "update office 365", "outlook error while accessing office 365", "Outlook 365  Unable to connect", "office 365 connection issues"],
+      "response": ["KBB0037142"],
+      "assignment_group": ["RCO_APPLICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKBB0037142%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Jabber_phone_services",
+      "patterns": ["Jabber-Error: Connection to Phone Service Failed", "jabber softphone failed to connect", "Jabber can't connect phone services", "jabber phone service error", "jabber can't connect to softphone", "i cannot access jabber phone services", "my jabber phone services are interrupted", "my jabber phone connection error", "my jabber phone services are down", "i cannot login to jabber softphone services", "jabber upgrade-login error", "jabber phone services are can't be started", "jabber unable to connect to phone services", "jabber softphone not working", "jabber phone services are stopped working", "jabber stopped with phone services", "jabber softphone cannot be connected", "connection to the softphone services failed in jabber"],
+      "response": ["KB0104163"],
+      "assignment_group": ["RCO_COMMUNICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0104163%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "jabber_voicemail",
+      "patterns": ["Unable to login to voicemail with jabber", "jabber voicemail is not working", "reset jabber voicemail", "jabber voice mail login issue", "I can't login to voicemail with jabber", "i have issue with voicemail in jabber", "can you help me reset voice mail in jabber?", "jabber voicemail issue, reset voicemail", "jabber error with voice mail", "how to reset jabber voice mail", "can i reset jabber voicemail?", "i need to reset jabber voice mail", "how can i reset jabber voice mail", "voicemail with jabber can't be accessed", "i am not able to access voice mail with jabber", "voicemail for jabber is not working", "help me with reset voice mail for jabber", "jabber voice mail problems"],
+      "response": ["KB0098151"],
+      "assignment_group": ["RCO_COMMUNICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0098151%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "OWCA_AD_setup",
+      "patterns": ["How to connect to a domain via ADUC (Active Directory Users and Computers)", "how to add OWCA domain in active directory", "add or connect to Active directory AD for OWCA domain", "how can we add OWCA domain in AD", "how to add OWCA domain in AD", "how to configure AD for OWCA", "how to set up domain in AD for OWCA", "help me connect to Active directory(AD) in OWCA", "do you know how to set up AD active directory for OWCA domain?", "set up AD for OWCA domain", "configure Active directory for OWCA domain", "can you help me connect to OWCA domain in AD active directory", "i need to set up AD for OWCA domains", "i want to set up AD for OWCA domain", "how to access AD active directory for OWCA domains", "help me add OWCA domains in Active directory AD", "OWCA active directory AD configuration", "OWCA AD active directory set up", "how to connect to Active directory for OWCA domains", "i need help set up Active directory AD for OWCA"],
+      "response": ["KB0082961"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0082961%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "OWCA_blackberry",
+      "patterns": ["OWCA Blackberry Work", "how to reset key for OWCA blackberry work", "reset key or token for blackberry work in OWCA", "please help me reset key for balckberry work in OWCA", "password reset for blackberry work in OWCA", "OWCA balackberry work password reset", "how to reset password for balckberry work for OWCA", "OWCA reset password for balckberry work", "blackberry work new access key", "how to access key for blackberry work in OWCA", "i need to access new key for blackberry work", "help me get new key for blackberry work", "reset password for blackberry work OWCA", "how do i access balckberry work new token?", "i need to new key token for balckberry work OWCA", "OWCA balckberry work new key", "reset password for balckberry work", "blackberry work issue with password", "blackberry work reset password", "can you help me reset password for blackberrt work?"],
+      "response": ["KB0082952"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0082952%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "smart_card_exception",
+      "patterns": ["smartcard exception", "smart card exception", "how to provide smart card exception", "how can i grant smartcard exception?", "do you know how to provide smartcard exception?", "how do we give smart card exception", "smart card exception", "smartcard exception", "reset smartcard exception", "grant smartcard exception", "smart card exception required", "smart card exception needed", "smart card provide exception", "smartcard exception portal", "smart card exception portal", "smart card grant exception portal", "grant smart card exception", "smartcard exception reset", "i need smartcard exception", "can i request for smart card exception", "i want smartcard exception", "can you give me smart card exception", "exception for smart card", "exception for smartcard"],
+      "response": ["KB0085485"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0085485%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "IRIS_java_error",
+      "patterns": ["IRIS java error", "issue with java in IRIS", "IRIS portal is not working due to java error", "IRIS can't load due to java error", "Unable to access IRIS due to java error", "java issue with IRIS", "IRIS java any error", "Iris image viewer unable to open due to java error", "java causes iris to fail", "failed to load IRIS due to java error", "java error while accessing iris", "java error while loading IRIS", "IRIS-issue with java", "java unable to access iris", "IRIS couldn't be loaded because of java"],
+      "response": ["https://helpdesk.uhg.com/knowledge-center/personal-hardware-software/general-applications/iris-%28integrated-rx-information-system%29/124129"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://helpdesk.uhg.com/knowledge-center/personal-hardware-software/general-applications/iris-%28integrated-rx-information-system%29/124129"],
+      "context": [""]
+    },
+    {
+      "tag": "IRIS_login",
+      "patterns": ["Unable to login to IRIS", "unable to launch IRIS", "IRIS login error, unable to launch", "I am not able to launch IRIS", "IRIS can't be launched", "couldn't login IRIS", "I can't login to IRIS", "Unable to login to IRIS", "IRIS can't be loaded", "IRIS issue doesn't load", "help me with IRIS login issue", "I am not able to login to IRIS", "IRIS is not working", "Iris can't be opened", "IRIS portal login error", "IRIS portal can't be logged in", "I am not able to login my IRIS portal", "IRIS (Integrated Rx Information System) Unable to login to IRIS (Integrated Rx Information System)", "IRIS portal login issue", "I unable to login to IRIS", "user can't login to IRIS", "user unable to access IRIS", "i cannot access IRIS", "IRIS can't access", "IRIS-user unable to access or login"],
+      "response": ["https://helpdesk.uhg.com/knowledge-center/personal-hardware-software/general-applications/iris-%28integrated-rx-information-system%29/124128"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://helpdesk.uhg.com/knowledge-center/personal-hardware-software/general-applications/iris-%28integrated-rx-information-system%29/124128"],
+      "context": [""]
+    },
+    {
+      "tag": "IRIS_blocked",
+      "patterns": ["IRIS (Integrated Rx Information System)Application blocked by security settings", "IRIS application blocked by security settings", "IRIS blocked by security settings", "IRIS security settings blocked", "IRIS blocked due to security settings", "unable to access IRIS, blocked by security settings", "unable to load IRIS, application blocked by security settings", "IRIS error, application blocked by security settings", "IRIS portal issue application blocked by security issues", "IRIS portal doesn't open due to application blocked by security settings", "IRIS is not working due to application blocked by security settings"],
+      "response": ["https://helpdesk.uhg.com/knowledge-center/personal-hardware-software/general-applications/iris-%28integrated-rx-information-system%29/124130"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://helpdesk.uhg.com/knowledge-center/personal-hardware-software/general-applications/iris-%28integrated-rx-information-system%29/124130"],
+      "context": [""]
+    },
+    {
+      "tag": "IRIS_image_viewer",
+      "patterns": ["IRIS Image Viewer Unable to view faxes from PAS or RXS Imaging", "IRIS image viewer unable to access faxes or view faxes", "IRIS image viewer issue, unable to view fax", "i cannot acceess fax for IRIS image viewer", "I am not able to access IRIS image viewer, unable to view fax", "issue with IRIS-image viewer, unable to view faxes", "IRIS portal issue-image viewer unable to view fax", "IRIS portal- image viewer unable to see fax", "IRIS image viewer issue, unable to view fax"],
+      "response": ["https://helpdesk.uhg.com/knowledge-center/personal-hardware-software/general-applications/iris-image-viewer/162128"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://helpdesk.uhg.com/knowledge-center/personal-hardware-software/general-applications/iris-image-viewer/162128"],
+      "context": [""]
+    },
+    {
+      "tag": "Bitlocker",
+      "patterns": ["Microsoft BitLocker Administration and Monitoring", "how can i recover bitlocker key?","unable to recover bitlocker key","help me recover bitlocker key","how do i recover bitlocker key","help me recover bitlocker key","how to recover bitlocker key", "Recover Bitlocker key","how to obtain Microsoft BitLocker", "help me find bitlocker key", "how to access botlocker key Microsoft BitLocker", "Microsoft BitLocker-user gets bitlocker issue", "get kb for bitlocker issue Microsoft BitLocker", "bitlcoker, how to find it?", "unable to find bitlocker key", "can you please help me find bitlocker key?", "how can i find bitlocker key?", "where do we find bitlocker key?Microsoft BitLocker", "how to find to Microsoft BitLocker?", "issue with Microsoft BitLocker", "where do i find bitlocker key?", "i cannot access bitlocker key, Microsoft BitLocker", "unable to find bitlocker key", "user want to find bitlocker key"],
+      "response": ["KB0085514/KBB0018200/KB0083706"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0083706%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "IRIS_password_reset",
+      "patterns": ["IRIS Tech Password Reset Document", "rest IRIS password", "how to reset IRIS password", "Unable to reset IRIS password", "how do we reset IRIS passwords?", "help me reset IRIS password", "what is the KB for IRIS password reset", "get me Kb for IRIS password reset", "user wants to reset IRIS password", "help user reset IRIS password", "can you help me how to reset password for IRIS?", "IRIS password reset", "reset IRIS password", "find me reset IRIS password", "i need to reset IRIS password", "i want to reset IRIS password", "do you know how to reset IRIS password?", "IRIS-password reset", "reset password for IRIS"],
+      "response": ["KB0083470"],
+      "assignment_group": ["MSA Oracle EBS (RXS)-SPT"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0083470%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "office_printer",
+      "patterns": ["Connecting to office printers","help me install printer in my machine windows 10","how do we install printer in windows 10","how to install printer in my windows machine","how to map office printer in windows 10", "how to connect to OptumRX office printer", "set up office printer", "how do we set up office printer?", "how do I connect to office printer?", "install office printer", "help me connect to office printer", "i need to connect to office printer", "how do i access office printer", "help me access office printer", "printer set up that is in office", "need to get printer installed", "install printer", "configure printer", "office unable to set up", "office printer set up guide", "printer set up process", "map the printer", "user wants to map office printer", "unable to access office printer", "map office printer", "how to map office printer?", "i need to map the office printer"],
+      "response": ["KB0084436"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084436%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "RxClaim_session_creation",
+      "patterns": ["RXClaim Session Creation", "how to create Rxclaim sessions?", "PCOMM- create Rxclaim sessions", "how do we create Rxclaim sessions in IBM PCOMM?", "i want to know how to create sessions in rxclaim?", "create rxclaim sessions in PCOMM", "configure RXclaim sessions in IBM PCOMM", "how to configure sessions in IBM PCOMM", "help configure Rxclaim sessions for IBM PCOMM", "PCOMM-unable to configure sessions", "help me configure sessions in Rxclaim", "find me kb for Rxclaim session creation process", "create new session for PCOMM", "RXCLAIM-create session in PCOMM", "user wants to create Rxclaim sessions", "unable to configure Rxclaim sessions", "Rxcliam IBM PCOMM create sessions", "how to access RXclaim session in PCOMM?", "how do i access session in PCOMM", "creating RxClaim session in PCOMM"],
+      "response": ["KB0084422"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084422%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "RxClaim_unexpected_error",
+      "patterns": ["RXClaim- CWB0999-Unexpected error unexpected return code 9052 20db error", "Rxclaim-unexpected error pop up", "Unexpected error with Rxclaim return code 9052", "Rxclaim error return code 9052", "Rxclaim unexpected error and return code 9052", "rxlciam PC5052 return code 9052 unexpected error", "Rxclaim PC5052 unexpected error return code 9052db", "Rxclaim error-PC5052 unexpected error, return code 9052db", "issue with Rxclaim-unexpected error return code 9052db", "RxClaim unexpected error due to return code 9052db", "Rxclaim unable to use it, unexpected error and return code 9052db", "PC5052 license error, Rxclaim unexpected error", "PC5052 license error, return code 9052db", "PC5052 license error, unexpected error in Rxclaim"],
+      "response": ["KB0084388"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084388%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "RSA_token_request",
+      "patterns": ["how to request RSA token for VPN", "VPN access, need to request for RSA", "RSA token request for VPN", "how to raise request for RSA token for VPN", "need RSA token for VPN", "RSA token for VPN", "how request for RSA token for VPN to access", "open request for RSA token for VPN", "RSA access for VPN", "help me find RSA token request for VPN", "How to request RSA token for VPN", "i need RSA token to connect to VPN", "RSA token is required to access VPN", "RSA token request to access to VPN", "how do i raise request to RSA token for VPN", "RSA token for VPN to connect", "user want to request for RSA token", "user need to request for RSA token", "find me RSA token request proceduce", "what is the process to request RSA token for VPN", "what is the proceduce to request RSA token for VPN"],
+      "response": ["KB0084386"],
+      "assignment_group": ["TSC HELP DESK - SPT"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084386%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "JBOSS_unable_open",
+      "patterns": ["JBoss Developer Studio, Unable to Launch", "help me with JBOSS studio, unable to open or access","JBOSS studio not working","Unable to launch JBOSS", "JBOSS is not working", "issue with JBOSS", "Redhat JBOSS unable to open", "JBOSS studio unable to launch", "issue launch JBOSS studio", "JBOSS studio unable to open and lanuch", "i can't launch JBOSS studio redhat", "JBOSS studio error, unable to launch", "JBOSS issue while launching it", "i have issue with JBOSS studio while opening it", "unable to launch redhat JBOSS studio", "i have JBOSS studio issue when trying to launch", "jboss studio not working while launching it"],
+      "response": ["KB0108330"],
+      "assignment_group": ["RCO_APPLICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0108330%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "SharePoint_excel",
+      "patterns": ["SharePoint-Issues Accessing or Downloading Excel Files", "microsoft excel unable to download from sharepoint", "sharepoint issue, excel download error", "sharepoint, unable to download excel files", "can't access excel files from sharepoint", "sharepoint error while accessing excel", "sharepoint issue while opening excel", "download excel file error in sharepoint", "excel file is not working while opening from sharepoint", "sharepoint trouble downloading excel file-ready only", "file cannot be opened microsoft excel in sharepoint", "issue downloading micorosoft excel from shaepoint", "error downloading excel file from sharepoint", "sharepoint unable to download excel", "help me download excel file from sharepoint", "my excel is not opening in sharepoint", "sharepoint issue, unable to download microsoft excel", "excel download error in sharepoint", "excel doesn't work from sharepoint", "user gets excel error while working in sharepoint"],
+      "response": ["KB0107529"],
+      "assignment_group": ["RCO_APPLICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0107529%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "One_drive_error",
+      "patterns": ["OneDrive O365-Error: The Tag Present in the Reparse Point Buffer is Invalid", "onedrive error tag present in reparse buffer is invalid", "onedrive the tag present in the reparse point buffer invalid", "OneDrive office 365 issue: the tag present in the reparse point buffer invalid", "Reparse point buffer invalid for onedrive", "OneDrive error, reparse point buffer invalid", "office 365 OneDrive issue with reparse point buffer invalid", "One drive error reparse bufffer invalid", "One drive office 365 error buffer invalid", "OneDrive issue- O365 reparse point buffer is invalid", "O365 error for OneDrive buffer is invalid", "O365 one drive issue reparse buffer is invalid"],
+      "response": ["KB0107264"],
+      "assignment_group": ["RCO_WORKSTATION"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0107264%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Microsoft_teams_font",
+      "patterns": ["Microsoft Teams-Font Issues", "Microsoft Teams, font size of the teams is fuzzy and skinny", "Microsoft Teams-not launching to the right resolution scaling ","Teams font too big", "Teams font size is small", "how to change font in microsoft teams?","microsoft teams font size change", "microsoft teams font is big", "microsoft office Teams font sie enlarged", "how to reduce the font size in Teams", "microsoft Teams-adjust the font size", "teams adjust font settings", "microsoft Teams font problems", "mircosoft teams font is zoomed", "how to zoom in and out of teams fonts", "microsoft team got large font size", "change font in Teams", "help me adjust font size in Teams", "how to update font settings in Teams", "how do i change the settings in teams for font size", "microsoft teams font options", "microsoft office Teams font needs to be changed", "microsoft teams font over sized", "help me reduce or minimize microsoft team's font size"],
+      "response": ["KB0107115"],
+      "assignment_group": ["RCO_COMMUNICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0107115%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "CPR_PLUS_Right_fax",
+      "patterns": ["how to request a RightFax account", "how do i request a RightFax account", "Rightfax account request guide", "rightfax account request process", "how request for rightfax account", "how to download the RightFax Fax Printer", "donwload rightfax fax printer", "how do we access rightfax fax printer", "help me set up RightFax fax printer", "can we download rightfax fax printer?", "how to use rightfax printer", "how to use rightfax fax printer with CPR plus", "download rightfax fax printer with CPR plus", "CPR plus rightfax printer", "request rightfax account", "how to use rightfax to print with cpr plus", "using rightfax printer with cpr", "CPR plus use rightfax printer", "download rightfax fax printer with CPR plus", "rightfax accout, rightfax printer download with CPR plus"],
+      "response": ["KB0085362"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0085362%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "BriovaRX_Telemed",
+      "patterns": ["issue with telemed aplication in BriovaRX", "telemed for BriovaRX is not working","telemed is not working", "help me with telemed for iOS", "telemed issue for PC", "unable to access telemed in iOS", "telemed BriovaRX application error", "find kb for telemed in BriovaRX", "telemed application issue for BriovaRX user", "unable to access telemed app", "i cannot login to telemed app", "how do i access telemed app for BriovaRX", "please help me with telemed BriovaRX", "I need help with telemed application Briovarx", "telemed BriovaRX issue"],
+      "response": ["KB0085190"],
+      "assignment_group": ["TSC HELP DESK - SPT"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0085190%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "OWCA_carepoint_access",
+      "patterns": ["OWCA-Carepoint Access Requests", "OWCA-how to get access to carepoint", "how do we get access to carepoint?", "can we get access to carepoint", "what is the procedure to get access to carepoint OWCA", "carepoint access issue", "carepoint first time access", "OWCA user needs access to carepoint", "carepoint OWCA access request", "how place in request for OWCA carepoint", "carepoint access request form", "OWCA carepoint access guide", "help me how to request for carepoint OWCA", "i want access to carepoint OWCA", "need access to carepoint", "how to request for carepoint access?", "help me request for carepoint access", "please help with carepoint OWCA", "carepoint access request form OWCA"],
+      "response": ["KB0085110"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0085110%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "IRIS_errors",
+      "patterns": ["Error: Could not login to Media Type Basic Telephony Connection to server","IRIS-Error: FRM-92101: There was a failure in the Forms Server during startup", "Unable to launch IRIS within Citrix", "IRIS issue-Could not login to Media Type Basic Telephony Connection to server", "unable to access IRIS from Citrix", "issue with IRIS in citrix", "IRIS unable to access, Could not login to Media Type Basic Telephony Connection to server", "IRIS unable to load inside citrix", "IRIS common issues with basic telephony connection error", "Iris issue, connection to server was interrupted", "IRIS is not working, error says connection to the server is interrupted", "IRIS failed to connect to server", "IRIS issue error basic telephony connection error", "IRIS is not opening inside citrix", "iris not working inside citrix", "IRIS unable to access connection failed to server", "IRIS error basic telephony and connection to server interrupted"],
+      "response": ["KB0085064/KB0084700"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://atlas.uhg.com/article/KB0106092"],
+      "context": [""]
+    },
+    {
+      "tag": "Lost_stolen",
+      "patterns": ["the device is been stolen", "the machine lost", "the device is been lost","the machine is been stolen","user reports that device is stolen","stolen device or lost device","user lost the device", "user machine is stolen", "user reports that the device is lost or stolen", "what to do if device is lost or stolen", "i lost my office device", "lost device", "stolen device", "my device is been stolen", "i lost my machine. its stolen", "how to report the loss of device", "what if we lost devices", "my device is been stolen", "office machine lost", "help me report stolen device", "help me report lost or stolen device", "help me report lost or stolen machine", "lost my office provided machine", "my office device or machine is been stolen or lost"],
+      "response": ["KB0084956"],
+      "assignment_group": ["TSC HELP DESK - SPT"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084956%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Uptivity_calls_issue",
+      "patterns": ["Call Copy (Uptivity) Unable to Load Calls", "Uptivity call recording at 0%", "unable to listen calls in uptivity", "can't listen to calls in uptivity", "issue with calls in uptivity", "OWCA uptivity call copy unable to listen to calls recording", "uptivity calls unable to listen recorded calls", "call copy or uptivity unable to hear call recording", "help me with uptivity call recoding issues", "call recording in uptivity at 0%", "issue with call recoding in uptivity", "call copy or uptivity issue while listen to call recoding", "uptivity unable to listen to call records", "uptivity call recoding hearing issues", "uptivity call recordin loading issue", "uptivity issue, unable to access call recoding", "call recording in uptivity is not loading", "call recording in call copy or uptivity not working, loading at 0%", "unable to load call recoding in uptivity", "uptivity call recording listen at 0%", "help me find kb for uptivity call recoding issue", "do you know how to fix uptivity call recording issue?"],
+      "response": ["KB0084947"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084947%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "VPN_network_repair",
+      "patterns": ["Cisco AnyConnect Network Repair","cisco any connect could not connect to the server","cisco anyconnect issue, no networks available","VPN-no networks available","cisco anyconnect network access unavailable no networks detected","VPN error- Network Access: Unavailable No Networks Detected","unable to access cisco anyconnect certificate validation failure error","unable to access VPN, certificate validation failure error","how to resolve cisco anyconect certificate validation failure error","how to fix VPN certificate validation failure error","issue connecting to VPN, certificate validation failure error","VPN error-certificate validation failure error","unable to connect to VPN, certificate validation failure error","issue with VPN-certificate validation failure error","cisco anyconnect-certificate validation failure error","vpn-certificate validation failure error","Cisco AnyConnect VPN Client-Posture assessment failed, host scan CSD pre login verification","HARD DOWN-Cisco Anyconnect-Unable to Connect to VPN","vpn issue, unable to connect","vpn network error","how to fix vpn","how to fix VPN issue","user can't connect to VPN","can you help me fix VPN issue?","how to fix VPN network error", "VPN no wifi adapters available", "cisco anyconnect no wifi adapters available", "VPN-network connectivity", "cisco anyconnect network connection error", "Cisco AnyConnect VPN Client-Error: could not connect to server please verify internet connectivity and server address", "VPN-couldn't connect to server", "unable to connect to VPN", "VPN is not working", "VPN-client no wifi adapters available", "anyconnect VPN client unable to connect", "VPN client could not establish connection", "VPN connectivity", "unable to access VPN", "unable to access cisco anyconnect", "VPN-client network error", "vpn issues", "vpn error, could not connect to server", "vpn unable to access", "vpn not connecting", "vpn reconnecting", "vpn keeps reconnecting", "i cannot access vpn", "i am not able to connect to VPN", "cisco anyconnect unable to connect", "i am not able to connect to cisco anyconnect", "user unable to access vpn", "VPN-unable to connect to network"],
+      "response": ["KB0084804/KBB0034002/KB0094942/KB0106018"],
+      "assignment_group": ["RCO_CONNECTIVITY"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084804%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "OWCA_DMS_account",
+      "patterns": ["OWCA DMS(Document Management System)Locked Account", "OWCA DMS account locked", "unlock DMS account", "my DMS account locked", "how to unlock DMS account in OWCA", "how do we unlock DMS account?", "user reported that DMS account locked", "DMS account locked out", "DMS locked out", "account lock out with DMS", "OWCA DMS (Document Management System) unlock Account", "OWCA DMS (Document Management System) Locked out", "OWCA DMS (Document Management System) keeps locking", "OWCA DMS (Document Management System) locked again", "OWCA DMS (Document Management System) unlock the account", "unable to unlock DMS account", "locked out of DMS", "help me unlock DMS account", "OWCA DSM account locked out"],
+      "response": ["KB0084778"],
+      "assignment_group": ["OptumRx OGS IT User Account Provisioning-SPT"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084778%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Avell_fax_Escript",
+      "patterns": ["Avella Fax and Escript Troubleshooting","Avella inbound fax issue", "Avella Escripts not received","Avella outbound fax issue","outbound fax error", "outbound faxes are not working", "help me with outbound fax", "help me fix inbound fax issue", "unable to access inbound fax", "inbound fax not working for avella", "issue with inbound fax avella", "Avella fax not working", "unable access fax for avella", "Fax not working avella, Escripts not being received", "unable to receive escipts avella", "Avella-Escripts issue", "Avella escripts not working", "unable to receive Escripts Avella", "Avella Escripts trobleshoot guide", "user reports escripts not receiving", "issue with escripts and fax", "fax is not working for avella users", "Escripts not working fof avella user", "issue wit fax avella users", "fax and escripts guide", "avella user fax is not working and escripts not received"],
+      "response": ["KB0084597"],
+      "assignment_group": ["AV Managed Care-SPT"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084597%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Avella_Clarity",
+      "patterns": ["unable to log in to Clarity","unable to change availability presence in clarity", "unable to make or receive calls in clarity", "Clarity issue dropped calls", "Clarity outbound caller id incorrect", "Clarity-agent console add-in does not load in", "user can't login to Clarity", "issue login to clarity", "help me login to clarity", "clarity unable to login", "clarity issue-unable to make calls", "unable to receive calls in clarity", "can't make calls out in clarity", "error with clarity", "clarity issue with calls", "unable to change status in clarity", "user can't change availability status in clarity", "issue with clarity status, unable to change", "Clarity status unable to set to ready", "clarity issue unable to change it to available", "clarity issue with calls, unable to make and receive", "unable to change the status to ready in clarity"],
+      "response": ["KB0084504"],
+      "assignment_group": ["AV Clarity - STP"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084504%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "CPR_launch_issue",
+      "patterns": ["Briova CPRPlus Unable to Launch Application with Citrix", "unable to access CPR+", "unable to open CPR+", "unable to access cprplus", "issue with cpr plus", "i can't launch cpr", "user can't launch CPR+", "CPR+ issue unable to lauch the application", "CPR application is not working", "cpr app not working", "i cannot open cpr+", "CPR issue, can't open application", "CPR error while launching the application", "CPR issue while launch app", "CPR+ error while opening the application", "how to fix CPR+ launch issues", "how to fix cprplus issue", "how to fix cpr plus issue", "i have issue with CPR+ unable to launch", "CPR+ can't be opened", "CPR plus issue, not working, unable to launch application", "help me with cpr issue unable to open application", "cpr+ issue, user can't open the app", "cpr error while launch", "CPR+ is not working, unable to access the cpr app", "unable to access CPR+", "unable to access CPR plus", "CPR PLUS can't be launched", "CPR PLUS cannot launch"],
+      "response": ["KB0084503"],
+      "assignment_group": ["BriovaRX Infusion CPRPLUS - SPT"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084503%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "SKYPE_IM_issues",
+      "patterns": ["Avella Skype Unable to Send or Receive IMs", "skype message issue", "unable to send and receive skype messages", "Skype instant message is not working", "i can't send skype messages", "unable to receive skype messages", "Skpye error, unable to send IM", "skype issue unable to send IM", "skype issue, unable to receive IM", "skype issue, unable to receive messages", "instant messages in skype are not sending", "messages not sending skype", "unable to send messages in Skype", "unable to receive messages in Skype", "Skype is now working, can't send and receive messages", "skype error, user can't find messages that were sent", "user unable to send messages in Skype", "skype doesn't send and receive messages", "skype is not sending messages", "instant messages in skype are not delivered", "IM couldn't be sent in skype", "skype couldn't receive IM", "IM instant messages in skype not being sent"],
+      "response": ["KB0084484"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url":["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084484%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Briova_cellular_network",
+      "patterns": ["Briova Tablet Cellular Connection Troubleshooting","cellular network in tablet need VPN","how to fix cellular network needs VPN","issue with cellular network in tablet needs to VPN","cellular connection needs to VPN", "BriovaRx Tablet Cellular Connection Needs VPN Error", "BriovaRX, issue with tablet and cellular connection", "help me with cellular connection in tablet BriovaRX", "BriovaRX unable to connect to cellular network", "unable to establish connection with cellular network on Tablet BriovaRX", "user can't connect to cellular network BriovaRX", "how to fix cellular connection error in tablet?", "how do i fix cellular network error in tablet", "user unable to access cellular network in tablet", "unable to connect to cellular newtowrk in briovaRX", "help me connect to Cellular network in Tablet for BriovaRX", "please help me with process to connect to cellular network in tablet", "how to connect to cellular network in tablet", "can you help me conncet to cellular network in tablet?", "do you know how to connect to cellular network in tablet?", "i need to connect to cellular network in tablet", "i am unable to make connection with cellular network in my tablet"],
+      "response": ["KB0084469/KB0084265"],
+      "assignment_group": ["WIRELESS MOBILITY - VOICE SERVICES (UHT) – NTW"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084469%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "EPS_launch",
+      "patterns": ["Avella EPS Client Unable to Launch", "Avella EPS client can't be launched", "EPS client is not working", "EPS unable to launch", "i cannot open EPS client", "EPS is not working", "unable to launch EPS", "EPS is not working", "help me with EPS unable to launch", "EPS client can't be opened", "error with EPS client", "i cannot open EPS", "i cannot launch EPS", "user can't launch EPS", "user is unable to launch EPS", "EPS issue can't launch the EPS client", "error with EPS client, can't open EPS", "EPS couldn't be launched", "EPS is not opening", "user can't open EPS", "EPS unable to open or launch", "i have an issue with EPS unable to launch", "EPS still not working, unable to open it", "EPS is not working or not launching"],
+      "response": ["KB0084446"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084446%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Field_service_lighting",
+      "patterns": ["OptumRx FSL Field Service Lighting) App", "OptumRx FSL (Field Service Lighting) App guide", "OptumRx FSL (Field Service Lighting) App process", "OptumRx FSL (Field Service Lighting) app is not working", "how to set up OptumRx FSL Field Service Lighting App", "how can i set up Field Service Lighting App", "troubleshoot guide for FSL Field Service Lighting App", "user can't login FSL Field Service Lighting App", "help me login FSL Field Service Lighting App", "i need help with FSL Field Service Lighting App", "how to configure FSL Field Service Lighting App", "FSL Field Service Lighting App on the mobile not working", "FSL Field Service Lighting App error in phone", "issue with FSL Field Service Lighting App on phone", "instal FSL Field Service Lighting App", "how to install FSL Field Service Lighting App", "can you help me install FSL Field Service Lighting App", "please install FSL Field Service Lighting App", "installation process for FSL Field Service Lighting App", "i need to install FSL Field Service Lighting App", "user needs to install FSL Field Service Lighting App", "FSL Field Service Lighting App user guide", "FSL Field Service Lighting App can't login", "FSL Field Service Lighting App set up procedure", "how do we set up FSL Field Service Lighting App on phone", "how to install FSL Field Service Lighting App on phone", "how can we install FSL Field Service Lighting App on phone", "FSL Field Service Lighting App issue on my phone"],
+      "response": ["KB0084276"],
+      "assignment_group": ["OPTUMRX FSL (SF) – SPT"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084276%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "RMS_letter",
+      "patterns": ["Issues Opening Letters in RMS", "unable to open letters in RMS", "RMS unable to open letters", "rms unable to open letter", "user can't open letters in RMS", "user cannot open letters in rms", "RMS issue with opening letters", "issue with open letters in RMS", "RMS issue, letter can't be opened", "RMS error, letters are not opening", "user is not able to open letters in RMS", "RMS issue, user is not able to open letters", "RMS user can't access letters", "RMS unable to open letters", "user is not able to open rms letters", "user is not able to open letters in RMS", "can't open letters in RMS", "how to fix unable to open letters in RMS"],
+      "response": ["KB0084162"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084162%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "OWCA_VM_restart",
+      "patterns": ["Restart OWCA VMware Desktops", "how to restart vmware for OWCA", "OWCA vmware is not working", "OWCA unable to access vmware", "owca unable to login to vmware", "owca issue with vmware", "owca how to restart vmware?", "OWCA-vmware desktop needs to be restarted", "help me restart vmware desktop for OWCA", "OWCA can't access vmware desktops", "user unable to login to vmware OWCA", "OWCA how do i restart vmware", "OWCA can you help me restart vmware", "OWCA restart vmware", "OWCA restart vm", "how to restart OWCA vm", "user can't access vm owca", "owca vmware needs to be restarted", "restart vmware for OWCA guide", "procedure for restart vmware OWCA"],
+      "response": ["KB0083995"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0083995%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "AUTO_VPN_disappeared",
+      "patterns": ["AutoVPN (AOVPN) Option Not Appearing in AnyConnect", "unable to see autoVPN", "vpn is missing","vpn disappeared", "AutoVPN option is missing", "AutoVPN is not available", "autovpn option is gone from dropdown", "autovpn option is missing from dropdown", "autovpn option disappeared", "AutoVPN is missing", "how to add autoVPN?", "fix autovpn disappeared", "AutoVPN is disappeared", "unable to find autovpn in the dropdown", "missing autovpn", "cisco anyconnect issue autovpn option disappeared", "AutoVPN disappeared from cisco anyconnect", "autovpn option missing in cisco anyconnect"],
+      "response": ["KB0083726"],
+      "assignment_group": ["RCO_CONNECTIVITY"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0083726%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Avaya_softphone",
+      "patterns": ["Configuring and Login to Avaya One-X Softphone-OWCA", "OWCA, how to configure avaya one-x softphone", "how to set up avaya one-x softphone", "help me configure avaya softphone one-x", "user wants to configure avaya one-x softphone for OWCA", "OWCA-issue with avaya softphone how to configure and login", "steps to configure avaya softphone one-x owca", "Configuring and Login to Avaya One-X Softphone-OWCA", "how do we set up avaya one-x softphone OWCA", "how do i set up avaya one-x softphone", "how to configure avaya one-x softphone OWCA", "how to set up avaya softphone in OWCA", "help me set up avaya softphone for OWCA user", "owca how to configure avaya one-x softphone","OWCA configure avaya one-x softphone", "avaya set up OWCA", "avaya configuration in OWCA"],
+      "response": ["KB0083543"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0083543%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Microsoft_visual_studio_error",
+      "patterns": ["Microsoft Visual Studio Error: Microsoft Visual Studio is unable to load this document. An Integration Services class cannot be found", "microsoft visual studio error, unable to load the document", "issue with microsoft visual studio, unable to load the document", "Microsoft Visual Studio Error: unable to load this document. An Integration Services class cannot be found", "Microsoft Visual Studio - Error: An Integration Services class cannot be found", "Microsoft Visual Studio issue and error an Integration Services class cannot be found", "how to fix Microsoft Visual Studio - Error: Microsoft Visual Studio is unable to load this document. An Integration Services class cannot be found", "can you help me fix Microsoft Visual Studio - Error: Microsoft Visual Studio is unable to load this document. An Integration Services class cannot be found", "how do i fix Microsoft Visual Studio - Error: Microsoft Visual Studio is unable to load this document. An Integration Services class cannot be found", "help me with Microsoft Visual Studio - Error: microsoft visual studio is unable to load this document. An Integration Services class cannot be found", "user is facing the issue microsoft visual studio - Error: microsoft visual studio is unable to load this document. An Integration Services class cannot be found"],
+      "response": ["KB0108290"],
+      "assignment_group": ["RCO_APPLICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0108290%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "find_BSL",
+      "patterns": ["who is BSL", "what is BSL", "how to find BSL", "how do we find BSL", "how can we find our BSL", "help me find BSL", "how do i find my BSL?", "can you help me find BSL please?", "i need to find my BSL", "who is BSL?", "what is BSL", "what is the full name of BSL", "where do we find BSL", "where do i find my BSL", "can you help me locate my BSL?", "how do we locate my BSL?", "how do i locate BSL", "where is my BSL", "where do i find BSL information?", "can you help me find BSL?", "i want to find BSL"],
+      "response": ["KB0096313"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0096313%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "SharePoint_access_error",
+      "patterns": ["SharePoint-Error: Sorry, You Don't Have Access or You Need Permission to Access This Item List Folder Library", "sharepoint issue, sorry don't have access", "sharepoint error, sorry you don't have access", "issue with sharepoint, sorry you don't have access", "Sharepoint issue while accessing", "unable to access sharepoint, you don't have access", "SharePoint-issue: Sorry, You Don't Have Access or You Need Permission to Access This Item List Folder Library", "i cannot access sharepoint, error is sorry you don't have access", "how to fix sharepoint issue you don't have access", "how do i fix sharepoint issue you don't have access", "help me with sharepoint issue you don't have access", "Sharepoint error, you need permissions to access", "sharepoint issue, you need permissions to access", "i have issue with sharepoint you need permissions to access", "sharepoint unable to access, you need permissions to access", "SharePoint access issue", "issue with sharepoint access", "issue while accessing SharePoint", "Sharepoint issue with access, you need permissions to access", "unable to open sharepoint, you need permissions to access", "sharepoint error, you need permissions to access"],
+      "response": ["KB0108284"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0108284%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Learnsource_issues",
+      "patterns": ["No audio/sound when taking a course", "unable to hear audio while taking course in learnsource", "Learnsource issue while taking the course, there is no audio or sound", "unable to hear the sound in learnsource", "Launch link is missing in learnsource", "launch link is missing in LearnSource", "Learnsource unable to access link to launch course", "learnsource-launch link is missing", "Completed course is still showing as incomplete in learnsource", "Completed course is still showing as incomplete in LearnSource", "learnsource course showing as incomplete", "learnsource course is not showing complete after the course being taken", "LearnSource issue, course doesn't complete", "learnsource unable to complete the course", "How to drop, re-enroll, or reschedule a LearnSource course", "how to drop a course in learnsource", "how do i withdraw course in learnsource", "i need to withdraw or drop a course in LearnSource", "can i drop or withdraw learnsource course?", "how to schedule a course in Learnsource", "how to re enroll a course in learnsource", "can we re enroll the course in learnsource", "how to reschedule the learnsource training or course", "how do i re-enroll for learnsource course, training?", "how to re_enroll the course in LearnSource", "help me re-enroll the learnsource course", "LearnSource-Duplicate courses listed", "issue with learnsource, Duplicate courses listed", "duplicate course in learnsource", "duplicate trainings in learnsource", "LearnSource-duplicate courses are added", "Duplicate courses listed in learnsource", "learnsource issue-Duplicate courses listed", "learnsource-Duplicate courses listed", "learnsource-Exceeded Attempt Limit-You have exceeded the number of attempts to pass this course", "learnsource error, you have exceeded number of attempts to pass", "you have exceeded number of attempts in learnsource", "learnsource exceeded attempts limit-you have exceeded number of attempts to pass the course"],
+      "response": ["KB0085444"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0085444%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Restore_sticky_notes",
+      "patterns": ["how to restore sticky notes?", "sticky notes missing in windows 10", "how to restore sticky notes in machine windows 10", "can you help me restore sticky notes in windows 10", "how do i restore sticky notes in windows 10?", "how do we restore sticky notes?", "can we restore sticky notes?", "my sticky notes missing", "how to get missing sticky notes back?", "how do i get sticky notes that is missing?", "how to do we restore or reload sticky notes?", "how do i reload sticky notes?", "help me restore the sticky notes", "the sticky notes is missing in windows 10", "reinstall sticky notes", "user wants to reinstall sticky notes", "can we reinstall sticky notes?", "how do we reinstall sticky notes in windows 10?", "how can i reinstall sticky notes in windows 10", "user wants to reinstall sticky notes", "can we reinstall sticky notes?"],
+      "response": ["KB0085469"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0085469%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Teams_conference_call",
+      "patterns": ["Microsoft Teams-for meetings there is no call in number and call me option is grayed out", "MS teams doesn't have call in options", "unable to make conference calls in Teams", "Teams conference call to dial in and out", "how to request for microsoft teams conference call options to dial in and out", "Teams-call number when hosting a meeting", "Microsoft Teams-call number when hosting a meeting", "MS teams call number when host in meeting", "teams don't have option to create call when creating meetings", "MS teams don't have dial options when hosting a meeting", "how do i get dial or call number options when creating or hosting a meeting?", "MS teams call number options grayed out", "call number options not available in MS teams", "Microsoft Teams call in option not showing when creating a teams meeting", "ms teams call in option not showing when creating a teams meeting", "MS teams call in option not showing when creating a teams meeting", "microsoft teams-call in option not showing when creating a teams meeting", "MS teams questions about audio conference request", "Microsoft Teams dial in features are not showing when creating a meeting", "microsoft teams conference all request form", "where do i find teams conference call request form", "how to find microsoft teams conference call request form", "Microsoft Teams couldn't show dial in options when create meetings", "ms teams doesn't show call in or dial in options", "Microsoft teams-dial in features are not showing when hosting a meeting", "ms teams dial in features are not showing when hosting a meeting", "teams doesn't show dial in features when creating a meeting", "team conference call request", "how to get conference call in teams?", "can i get conference call access in Teams?", "how to request for conference call option in teams?", "microsoft teams-conference call request"],
+      "response": ["KB0107206"],
+      "assignment_group": ["RCO_COMMUNICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0107206%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Outlook_metered_connection",
+      "patterns": ["Turn Off Metered connection and set to Unlimited data in outlook", "turn off metered connection and set to Unlimited data in outlook 365", "Turn Off Metered connection and set to Unlimited data in outlook email", "office 365-turn off Metered connection and set to unlimited data in outlook", "outlook issue-turn off metered connection and set to unlimited data", "outlook error turn off the metered connection and set unlimited data", "outlook error, metered network warning", "office 365 outlook issue, metered network warning", "outlook issue metered network warning turn off the metered connection", "outlook 365 got metered network warning", "metered network warning in office 365 email outlook", "how to fix metered network warning in outlook", "how do i fix metered network warning", "can you help me fix metered network warning", "Metered network warning in outlook", "outlook issue with metered network warning", "user gets metered network warning in outlook"],
+      "response": ["KB0108328"],
+      "assignment_group": ["RCO_APPLICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0108328%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "SEP_out_of_date",
+      "patterns": ["Symantec EndPoint Protection out of date", "symantec endpoint protection definition out of date", "Symantec EndPoint Protection getting notification anti virus definition is out of date", "virus definition out of date in SEP symantec endpoint protection", "symantec endpoint protection-virus definitions out of date", "Symantec EndPoint Protection-Anti virus definition is out of date", "Anti virus definition is out of date", "symantec endpoint protection critical errors and is not getting updates", "issue with SEP symantec endpoint protection, out of date", "Symantec EndPoint Protection Not updating virus definitions", "Symantec EndPoint Protection Old Virus Definition File warning", "Symantec Endpoint Protection receiving out of date virus definition messages", "SEP-receiving out of date virus definition messages", "SEP-anti virus out of date", "SEP issue-old virus definition", "update anti virus in SEP out of date symantec endpoint protection", "update anti virus definitions in SEP symantec endpoint protection", "how to update virus definitions in SEP Symantec endpoint protection", "how to fix issue with anti virus definition out of date in symantec endpoint protection", "help me fix anti virus out of date issue in Symantec EndPoint Protection"],
+      "response": ["KBB0016625"],
+      "assignment_group": ["RCO_WORKSTATION"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKBB0016625%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "SEP_issue_load_file",
+      "patterns": ["Symantec EndPoint Protection-Unable to download pdf file", "symantec endpoint protection issue, unable to download file or documents", "symantec endpoint protection blocks download files", "unable to download pdf files due to symantec endpoint protection", "i can't download pdf files due to symantec endpoint protection", "issue with Symantec EndPoint Protection-getting virus error when downloading files", "how to fix getting virus error when downloading files", "unable to download PDF file due to SEP symantec endpoint protection", "symantec endpoint protections prevents download pdf files or documents", "symantec issue, unable to download pdf files", "how to fix unable to download pdf files due to symantec endpoint protections", "issue download pdf files due to symantec endpoint protection", "Symantec EndPoint Protection-can't access PDF files", "symantec endpoint protection-pdf files are can't be accessed", "symantec endpoint protection-pdf files are not downloading"],
+      "response": ["KB0107589"],
+      "assignment_group": ["RCO_WORKSTATION"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0107589%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Win10_black_screen",
+      "patterns": ["Windows 10-Booting to a Blank or Black screen", "windows 10 black screen issue", "windows 10 goes to black screen", "black screen with windows 10", "windows 10 gets black screen", "issue with black screen in windows 10", "how to fix black screen issue in windows 10", "how do i fix black screen issue in windows 10?", "user gets black screen issue with windows 10 machine", "windows 10 machine gets black screen", "windows 10 booting to blank screen", "screen gets blank in windows 10", "blank screen issue with windows 10", "how to fix blank screen in windows 10?", "windows 10 black screen issue", "Windows 10 issue, black or blank screen appears", "Windows 10 system blank screen", "Windows 10 goes blank", "windows 10 issue, unable to login due to blank screen", "can't login to windows 10. gets blank screen", "user can't login to windows 10 due to blank or black screen", "issue with windows 10 blank or black screen", "not able to login to windows 10 black or blank screen", "i can't login to windows due to blank screen", "how to fix windows 10 blank screen?", "windows 10 keep goes to blank screen", "windows 10 keep getting blank"],
+      "response": ["KB0101900"],
+      "assignment_group": ["RCO_WORKSTATION"],
+      "context": [""]
+    },
+    {
+      "tag": "Win10_slow",
+      "patterns": ["PC is slow", "windows 10 is too slow", "performance issue with windows", "slow and lagging windows performance", "unable to use system running slow", "windows is slow", "windows 10 works very slow", "my computer is slow", "the PC is running slow", "how to fix pc or computer is being slow", "my computer non responsive and slow", "applications in windows 10 works slow. lagging the performance", "windows 10 is slow and not responsive", "windows 10 stuck", "pc gets slow", "the computer is running slow", "PC is running slow", "system freezing", "pc is freezing", "windows 10 keeps freezing", "issue with windows 10, non responsive", "windows 10 is freezing", "PC is freezing", "system is slow and freezes", "how to fix system issue running slow and no response", "windows 10 system issue, slow performance", "windows 10 system is slow", "window 10 system is freeze", "issue with system windows freeze", "how to fix system slowness?", "windows 10 is really slow", "windows 10 keeps freezing"],
+      "response": ["KB0096480"],
+      "assignment_group": ["RCO_WORKSTATION"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0101900%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "IRIS_Screen_Resolution",
+      "patterns": ["IRIS-Integrated Rx Information System, Information does not fit the IRIS screen", "IRIS issue, information doesn't fit the screen", "issue with IRIS, information doesn't fit the screen", "iris unable to change screen resolution", "IRIS-unable to change screen size", "IRIS-page looks way too big", "IRIS Integrated Rx Information System-page looks too big", "IRIS screen is too big", "IRIS-display on IRIS is way too big", "IRIS-display is large", "IRIS display size is too big", "IRIS-unable to change the display size", "how to change IRIS display settings", "how do i change IRIS display resolution", "IRIS-display doesn't fit into screen", "IRIS size is big", "IRIS screen is big", "help me fix IRIS screen size issue", "unable to change screen size for IRIS", "how can we change display size on IRIS?", "can we change display resolutions for IRIS?", "help me change screen size in IRIS", "IRIS screen doesn't fit into window", "IRIS display is too big", "IRIS page is too big", "IRIS-screen look too big in size"],
+      "response": ["KB0107310"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0107310%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Carelink_missing_record",
+      "patterns": ["Carelink issue, missing records or blog groups", "carelink unable to see records or blog groups", "issue with carelink-missing records", "Carelink issue, missing records and blog groups", "help me find carelink missing records", "how can i find Carelink missing groups?", "how can we find carelink missing records?", "how do i find carelink blog groups or missing groups", "help me find carelink missing groups", "can you help me find carelink missing records or blog groups?", "i need to find carelink blog groups or missing groups", "unable to find carelink missing records", "how do i find carelink missing records?", "Carelink missing records or blog groups issue", "Carelink issue, missing records and blog groups", "Carelink missing records unable to find", "Carelink blog groups unable to find"],
+      "response": ["KB0107286"],
+      "assignment_group": ["BriovaRX Infusion Carelink Ver2 - SPT"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0107286%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "OnBase_error",
+      "patterns": ["OnBase issue, could not reach the application server", "Onbase issue, could not reach the application server", "issue with OnBase could not reach the server", "unable to access OnBase application, could not reach the application server", "how to fix OnBase application error?", "how do i fix OnBase application could not reach the server", "OnBase issue, can't connect to application server", "OnBase issue while connecting to application server", "unable to connect to OnBase application server", "unable to connect to onbase application server", "onbase issue while launching, could not connect to application server", "unable to access onbase, application server could not be connected", "OnBase issue application server couldn't be reached", "application couldn't be reached-OnBase", "issue with OnBase, could not connect to application server", "how do i fix Onbase issue, application server could not be reached", "OnBase error, could not reach the application server"],
+      "response": ["KB0107141"],
+      "assignment_group": ["OFT Stop Loss"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0107141%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "MS_teams_meeting",
+      "patterns": ["microsoft teams unable to schedule meeting", "microsft teams-unable to create meeting","MS Teams-can't create meeting","microsoft teams-unable to create meeting","issue with microsoft teams, can't schedule meeting", "Microsoft teams unable to set up meeting", "MS teams unable to set up meeting", "microsoft teams can't schedule meeting", "teams can't schedule the meeting", "teams can't set up meeting", "issue with Microsoft Teams-can't schedule the meeting", "how to fix the issue with microsoft Teams unable to schedule the meeting", "how to fix MS teams issue with schedule or set up meeting", "user can't set up meetings in microsoft teams", "unable to set up meeting in microsoft teams", "can't set up meeting in MS teams", "issue with microsoft teams can't set up meeting", "issue with MS Teams-can't schedule the meeting", "Microsoft Teams-issue with schedule meeting", "Microsoft Teams-can't schedule the meeting", "Microsoft Teams-unable to set up meeting", "MS Teams-can't schedule meeting", "MS Teams-unable to schedule the meeting"],
+      "response": ["KB0108549/KB0107151/KB0107199"],
+      "assignment_group": ["RCO_APPLICATIONS"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0108549%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Avella_EPS_launch",
+      "patterns": ["Avella-EPS client unable to launch", "EPS unable to open", "EPS unable to connect", "issue with EPS, unable to launch", "Avella EPS can't be opened", "Avella EPS cannot be connected", "EPS issue, can't be launched", "unable to open EPS client", "EPS is not working, unable to launch", "EPS is not working, can't launch", "EPS unable to open", "error wile loading EPS", "EPS can't open", "EPS can't launch", "help me with EPS issue unable to launch", "can you help me fix EPS unable to launch", "EPS unable to launch", "how to fix EPS issue, unable to open", "help me fix EPS issue can't launch", "EPS is not working , unable to launch the client", "unable to load EPS", "EPS can't be loaded", "EPS issue, unable to load client", "EPS can't load", "EPS is not loading", "issue with EPS loading", "unable to load EPS", "EPS doesn't load at all", "EPS still not loading"],
+      "response": ["KB0084446"],
+      "assignment_group": ["AV IT Field Services"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0084446%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Tableau_Addin_excel",
+      "patterns": ["excel is missing tableau add in", "unable to see tableau add-in excel", "missing tableau add-in in excel", "excel-tableau add-in missing", "tableau add-in missing from excel", "tableau add-in removed from excel", "help me fix tableau add-in missing from excel", "tableau add-in deleted from excel", "excel-can't see tableau add-in", "tableau add in unable to find in excel", "help me find tableau add-in in excel", "user can't find tableau add-in in excel", "tableau add-in in excel missing", "excel-tableau add in deleted", "how to add tableau add-in in excel", "help me configure tableau add-in in excel", "tableau add-in install in excel", "how to configure tableau add-in in excel", "configure tableau add-in in excel", "help me configure tableau add-in in excel", "excel-add tableau add-in in excel", "how to add tableau add in in excel", "i need to configure tableau add-in for excel", "how to add tableau add in for excel", "can you help me add tableau add in for excel?", "configure tableau add in for excel", "i need to install tableau add in for excel", "can you help me install tableau add in for excel please?", "how to i configure tableau add in for excel?"],
+      "response": ["KB0108704"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0108705%26sysparm_stack%3D%26sysparm_view%3D"],
+      "assignment_group": ["RCO_APPLICATIONS"],
+      "context": [""]
+    },
+    {
+      "tag": "Secure_email",
+      "patterns": ["Outlook 365-Unable To Send Secure Email, Action Required to use Secure Delivery", "outlook-i can't secure delivery email", "outlook-unable to send secure emails", "outlook 365 can't send secure emails, action required", "how to do i send secure emails in outlook 365", "can you help me send secure emails in outlook?", "outlook-365 unable to send secure emails, action required to use secure delivery", "can't send secure emails in outlook 365, action required to use secure delivery", "how to send secure emails in outlook?", "can't send secure emails in outlook", "help me send secure emails in outlook", "secure emails in outlook can't be sent", "how do we send secure emails in outlook?", "i need to send secure emails in outlook", "how can i send secure emails in outlook?", "secure emails in outlook need to be sent", "help me fix unable to send secure emails, action required to use secure delivery", "can't send secure emails in outlook, action required to use secure delivery", "how do use secure delivery in outlook?", "help me set up secure delivery for email in outlook", "unable to send secure emails in outlook, action required to use secure delivery"],
+      "response": ["KB0108487"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0108487%26sysparm_stack%3D%26sysparm_view%3D"],
+      "assignment_group": ["RCO_APPLICATIONS"],
+      "context": [""]
+    },
+    {
+      "tag": "Win10_domain_error",
+      "patterns": ["Windows10- Error: The system could not log you on, the domain specified is not available", "windows 10-domain specified is not available, unable to login to system", "Windows 10 - Error: The system could not log you on, the domain specified is not available", "Windows 10 - Error: The system could not log you on, the domain specified is not available.", "unable to connect to system, domain specified is not available", "unable to login to system, domain specified is not available", "windows10-the system couldn't log you on, domain sepcified is not available.", "can't login to windows 10, domain specified is not available", "windows10, can't login, domain specified is not available", "the system can't be logged in, domain specified is not available", "unable to connect to cisco anyconnect vpn-domain specified is not available", "can't connect to cisco anyconnect vpn-domain specified is not available", "domain specified is not available", "system couldn't log you in, the domain specified is not available", "domain specified is not available-windows10", "unable access windows10 domain specified is not available", "windows10-domain specified is not available"],
+      "response": ["KB0106967"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0106967%26sysparm_stack%3D%26sysparm_view%3D"],
+      "assignment_group": ["OptumRx IT Field Services"],
+      "context": [""]
+    },
+    {
+      "tag": "VPN_PSK_error",
+      "patterns": ["Cisco AnyConnect VPN Client-PSK errors occurring when attempting to connect to wireless internet", "VPN Client - PSK errors occurring when attempting to connect to wireless internet", "vpn client - PSK errors occurring when attempting to connect to wireless internet", "VPN Client-PSK errors occurring when attempting to connect to wireless internet", "unable to connect to VPN, PSK errors when attempting to connect to wireless network", "can't connect to VPN, PSK errors when attempting to connect to wireless network", "VPN issue-PSK errors when attempting to connect to wireless network", "cisco anyconnect VPN, PSK errors when attempting to connect to wireless network", "VPN Client, PSK errors when attempting to connect to wireless network", "cisco anyconnect-VPN, PSK errors when attempting to connect to wireless network", "VPN, PSK errors when attempting to connect to wireless network, incorrect PSK", "VPN, PSK errors when attempting to connect to wireless network, wrong PSK", "Cisco anyconnect VPN Client-PSK errors when attempting to connect to wireless network", "incorrect PSK error in VPN", "incorrecct PSK error in cisco anyconnect VPN client", "vpn issue, incorrect PSK", "cisco anyconnect issue-PSK errors when attempting to connect to wireless network"],
+      "response": ["KB0106019"],
+      "assignment_group": ["RCO_CONNECTIVITY"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0106019%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "Verizon_network",
+      "patterns": ["Unable to Connect to Verizon", "can't connect to verizon", "issue with network, unable to connect to verizon", "network issue with verizon, unable to connect", "unable to connect to cellular network verizon", "can't connect to cellular network verizon", "help me fix issue with verizon network can't be connected", "verizon cellular network issue", "unable to connect to cellular network verizon", "issue while connecting to cellular network verizon", "unable to connect to verizon network", "user can't connect to verizon network", "cellular network issue, unable to connect to verizon network", "help me fix the issue with verizon network connection", "unable to connect to verizon network", "can't connect to cellular network-verizon", "issue with network-verizon cellular network", "can't connect to cellular network verizon", "verizon cellular network can't be connected"],
+      "response": ["KB0104057"],
+      "assignment_group": ["RCO_CONNECTIVITY"],
+      "url": ["https://optum.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0104057%26sysparm_stack%3D%26sysparm_view%3D"],
+      "context": [""]
+    },
+    {
+      "tag": "VPN_can't_connect",
+      "patterns": ["unable to connect to Cisco AnyConnect VPN Client-Mobile Hotspot", "can't connect to VPN on wifi", "unable to connect to vpn", "unable to connect to cisco anyconnet vpn", "network connectivity issue, vpn doesn't connect on wireless network", "vpn issue-unable to connect to network", "VPN issue-unable to connect to wifi using cisco anyconnect network access manager", "cisco anyconnect vpn, unable to connect to network on wifi", "vpn-no network connection", "Cisco Anyconnect Secure Mobility Client-Unable to connect", "Cisco Identity Service Engine - Unable to connect to wifi", "Cisco Anyconnect Secure Mobility Client-Unable to connect", "cisco anyconnect issue while connecting to wireless network", "VPN can't connect wireless network", "unable to connect to vpn", "unable to access VPN wireless network", "unable to connect to vpn wireless network", "can't connect to VPN", "help me connect to cisco anyconnect VPN wireless network", "can't connect to cisco anyconnect VPN", "VPN doesn't connect", "Cisco Identity Service Engine - Unable to connect to home WIFi using Cisco Network Access Manager", "Cisco posture error on WiFi", "VPN, WiFi issues", "WiFi Adapter not available in Cisco AnyConnect, No WiFi option in Windows Network"],
+      "response": ["KB0104849"],
+      "assignment_group": ["RCO_CONNECTIVITY"],
+      "url": ["https://optum.service-now.com/kb_view.do?sysparm_article=KB0104849"],
+      "context": [""]
+    }
+  ]
+}

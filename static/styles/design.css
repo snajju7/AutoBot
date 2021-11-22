@@ -1,0 +1,38 @@
+body {
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 35px;
+    color: orangered;
+    padding: 14px;
+    margin: 0px;
+}
+
+#chat_log {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px ridge; 
+}
+
+#user_input {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px ridge;
+
+}
+
+#send_btn {
+    position: absolute;
+    width: 65px;
+    height: 57px;
+    border: 0px ridge white;
+    background-color: orange;
+}
+
+
+
+
+
